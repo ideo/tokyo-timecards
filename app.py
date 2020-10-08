@@ -5,6 +5,9 @@ import streamlit as st
 from make_timecard import make_timecards
 
 
+st.set_option('deprecation.showfileUploaderEncoding', False)
+
+
 def app():
     st.title("Hi Satoko San!!!")
     uploaded_file = st.file_uploader("Upload your CSV here!", type=['csv'])
